@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define your beans here -->
+    <bean class="com.ss.Employee" name="emp1">
+    <property name="id" value="1"/> 
+    <property name="name" value="Shivaji"/>
+    <property name="contacts">
+    <list>
+    <value>9856</value>
+    <value>789645</value>
+    <value>2245687</value>
+    <null></null>  <!-- We can add null value in list  by null tag -->
+    </list>
+    </property>
+    
+    <property name="address">
+    <set>
+    <value>"Delhi"</value>
+    <value>"Pune"</value>
+    <value>"Mumbai"</value>
+    </set> 
+    </property>
+    
+    <property name="courses">
+    <map>
+    <entry key="java" value="2month"/>
+    <entry key="Web" value="6month"/>
+    <entry key="Mern" value="4month"/>
+    </map> 
+    </property>
+    
+    
+    </bean>
+
+</beans>
